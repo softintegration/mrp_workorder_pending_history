@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_workorder_pending_motif_user,mrp.workorder.pending.motif.user,model_mrp_workorder_pending_motif,mrp.group_mrp_user,1,0,0,0
+access_mrp_workorder_pending_motif_manager,mrp.workorder.pending.motif.manager,model_mrp_workorder_pending_motif,mrp.group_mrp_manager,1,1,1,1
+access_mrp_workorder_pending_confirmation_user,mrp.workorder.pending.confirmation.user,model_mrp_workorder_pending_confirmation,mrp.group_mrp_user,1,1,1,1
+access_mrp_workorder_pending_history_user,mrp.workorder.pending.history.user,model_mrp_workorder_pending_history,mrp.group_mrp_user,1,1,1,1

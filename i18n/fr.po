@@ -1,0 +1,174 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_workorder_pending_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-06 19:32+0000\n"
+"PO-Revision-Date: 2023-02-06 19:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_confirmation_form
+msgid "<strong>Pending date</strong>"
+msgstr "<strong>Date mise en attente</strong>"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_confirmation_form
+msgid "<strong>What is the reason for this Pending?</strong>"
+msgstr "<strong>Quelle est la raison de cette mise en attente?</strong>"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_confirmation_form
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__create_uid
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__create_uid
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__create_date
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__create_date
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__display_name
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__display_name
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__id
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__id
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__id
+msgid "ID"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation____last_update
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history____last_update
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__write_uid
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__write_uid
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__write_date
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__write_date
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__pending_motif
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__name
+msgid "Motif"
+msgstr "Motif"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_motif__description
+msgid "Motif Detail"
+msgstr "Détail du motif"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__pending_motif_description
+msgid "Motif details"
+msgstr "Détail du motif"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.actions.act_window,help:mrp_workorder_pending_history.mrp_workorder_pending_motif_action
+msgid "No pending motif found. Let's create one!"
+msgstr "Pas de motif de mise en attente disponible. Créons en une !"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_production_workorder_tree_editable_view_inherited
+msgid "Pause"
+msgstr "Mettre en attente"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder__pending_history_ids
+msgid "Pending History"
+msgstr "Historique de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: code:addons/mrp_workorder_pending_history/models/mrp_workorder.py:0
+#: model:ir.model,name:mrp_workorder_pending_history.model_mrp_workorder_pending_confirmation
+#, python-format
+msgid "Pending confirmation"
+msgstr "Confirmation de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__pending_date
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__pending_date
+msgid "Pending date"
+msgstr "Date de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_production_workorder_form_view_inherit_inherited
+msgid "Pending history"
+msgstr "Historique de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_confirmation__pending_motif_id
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_confirmation_form
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_motif_form_view
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_motif_tree_view
+msgid "Pending motif"
+msgstr "Motif de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: code:addons/mrp_workorder_pending_history/wizard/mrp_workorder_pending_confirmation.py:0
+#, python-format
+msgid "Pending motif is required!"
+msgstr "Motif est obligatoire"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model,name:mrp_workorder_pending_history.model_mrp_workorder
+msgid "Work Order"
+msgstr "Ordre de travail"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model.fields,field_description:mrp_workorder_pending_history.field_mrp_workorder_pending_history__workorder_id
+msgid "Workorder"
+msgstr "Ordre de travail"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model,name:mrp_workorder_pending_history.model_mrp_workorder_pending_history
+msgid "Workorder pending history"
+msgstr "Historique de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.actions.act_window,name:mrp_workorder_pending_history.mrp_workorder_pending_motif_action
+#: model:ir.ui.menu,name:mrp_workorder_pending_history.menu_mrp_workorder_pending_motif_action
+msgid "Workorder pending motif"
+msgstr "Motif de mise en attente"
+
+#. module: mrp_workorder_pending_history
+#: model_terms:ir.ui.view,arch_db:mrp_workorder_pending_history.mrp_workorder_pending_confirmation_form
+msgid "_Cancel"
+msgstr "Annuler"
+
+#. module: mrp_workorder_pending_history
+#: model:ir.model,name:mrp_workorder_pending_history.model_mrp_workorder_pending_motif
+msgid "mrp.workorder.pending.motif"
+msgstr ""

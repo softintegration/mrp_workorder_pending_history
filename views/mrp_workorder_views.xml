@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+
+
+        <record id="mrp_production_workorder_form_view_inherit_inherited" model="ir.ui.view">
+            <field name="name">mrp.production.workorder.form.view.inherit.inherited</field>
+            <field name="model">mrp.workorder</field>
+            <field name="inherit_id" ref="mrp.mrp_production_workorder_form_view_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='time_tracking']" position="after">
+                    <page string="Pending history" name="pending_history_ids">
+                        <field name="pending_history_ids" nolabel="1" readonly="1">
+                            <tree editable="bottom">
+                                <field name="pending_date"/>
+                                <field name="pending_motif"/>
+                                <field name="pending_motif_description"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="mrp_production_workorder_tree_editable_view_inherited" model="ir.ui.view">
+            <field name="name">mrp.production.workorder.tree.editable.view.inherited</field>
+            <field name="model">mrp.workorder</field>
+            <field name="inherit_id" ref="mrp.mrp_production_workorder_tree_editable_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='button_pending']" position="attributes">
+                    <attribute name="attrs">{'invisible':[('id','!=',0)]}</attribute>
+                </xpath>
+                <xpath expr="//button[@name='button_pending']" position="after">
+                    <button name="button_pending_wizard" type="object" string="Pause" class="btn-warning"
+                      attrs="{'invisible': ['|', '|', ('production_state', 'in', ('draft', 'done', 'cancel')), ('working_state', '=', 'blocked'), ('is_user_working', '=', False)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Workorder pending motif-->
+
+        <record model="ir.ui.view" id="mrp_workorder_pending_motif_form_view">
+            <field name="name">Workorder pending motif Form View</field>
+            <field name="model">mrp.workorder.pending.motif</field>
+            <field name="arch" type="xml">
+                <form string="Pending motif">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="mrp_workorder_pending_motif_tree_view">
+            <field name="name">Workorder pending motif Tree view</field>
+            <field name="model">mrp.workorder.pending.motif</field>
+            <field name="arch" type="xml">
+                <tree string="Pending motif" editable="top" sample="1">
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="mrp_workorder_pending_motif_action" model="ir.actions.act_window">
+            <field name="name">Workorder pending motif</field>
+            <field name="res_model">mrp.workorder.pending.motif</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No pending motif found. Let's create one!
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_mrp_workorder_pending_motif_action"
+              action="mrp_workorder_pending_motif_action"
+              parent="mrp.menu_mrp_configuration"
+              groups="mrp.group_mrp_manager"
+              sequence="100"/>
+
+    </data>
+</odoo>
